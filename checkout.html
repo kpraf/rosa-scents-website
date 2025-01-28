@@ -1,0 +1,174 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Checkout - Rosa Scents</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo/pink-rosascents-favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header id="navigation">
+        <div class="container">
+            <!-- Nav Logo -->
+            <a href="homepage.html" class="logo" aria-label="back to home">
+                <img src="assets/logo/b-rosascent-logo.svg" alt="logo" width="300" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!-- Navigation List -->
+            <nav class="nav" role="navigation">
+                <!-- Mobile Nav Toggle -->
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <span class="line line1" aria-hidden="true"></span>
+                        <span class="line line2" aria-hidden="true"></span>
+                        <span class="line line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- Wrapper for Navigation -->
+                <div class="ul-wrapper">
+                    <ul id="expanded" class="ul" aria-expanded="false">
+                        <li class="li">
+                            <a href="homepage.html" class="li-link">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="shop.html" class="li-link">Shop</a>
+                        </li>
+                        <li class="li cs-dropdown" tabindex="0">
+                            <span class="li-link">
+                                Categories
+                                <img class="drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" deHoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="drop-ul">
+                                <li class="drop-li"><a href="" class="li-link drop-link">New Arrivals</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Best Sellers</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Women's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Men's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Unisex Perfume</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="about.html" class="li-link">About Us</a></li>
+                        <li class="li"><a href="contact.html" class="li-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Icons Section -->
+            <div class="icons-container">
+                <a href="" class="icon-link" id="search-btn"><i class="fal fa-search"></i></a>
+                <a href="login.html" class="icon-link"><i class="fal fa-user"></i></a>
+                <a href="checkout.html" class="icon-link" id="shop-btn"><i class="fal fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH CONTAINER -->
+    <div id="search-container" class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search for products...">
+            <button id="close-search" class="close-search">
+                <i class="far fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <section id="checkout-page">
+        <div class="container">
+            <!-- Main Content Area -->
+            <div class="main-content">
+                <!-- Page Header -->
+                <header class="page-header">
+                    <h1>Shipping and Delivery Basket (0)</h1>
+                </header>
+
+                <!-- Shipping Policy Section -->
+                <div class="shipping-policy">
+                    <div class="shipping-sign-in">
+                        <p class="shipping-text">
+                            Beauty Insiders enjoy <strong>FREE Standard Shipping</strong> on all orders.
+                        </p>
+                        <button class="shipping-button">Sign In</button>
+                    </div>
+                    <div class="return-policy">
+                        <p>Free returns on all purchases*</p>  
+                    </div>
+                </div>
+
+                <!-- Empty Basket Section -->
+                <div class="empty-basket">
+                    <div class="empty-basket-message">
+                        <h2>Your basket is currently empty.</h2>  
+                        <p>Please sign in if you are trying to retrieve a previously created basket.</p> 
+                    </div>
+                    <button class="sign-in-button">Sign In</button>  
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="checkout-sidebar">
+                <!-- Order Summary -->
+                <div class="order-summary">
+                    <div class="summary-container">
+                        <div class="total-breakdown">
+                            <div class="subtotal">  
+                                <p>Subtotal</p>  
+                                <p>$0.00</p>  
+                            </div>  
+                            <div class="estimated-tax">  
+                                <p>Estimated Tax</p>  
+                                <p>$0.00</p>  
+                            </div>  
+                        </div> 
+                        <div class="total-summary">  
+                            <h3>Estimated Total</h3>  
+                            <h2>$0.00</h2>  
+                        </div>  
+                        <button class="checkout-button">Checkout</button>  
+                    </div>
+
+                    <!-- Payment Methods -->
+                    <div class="payment-methods">  
+                        <h4>Supported Payment Methods</h4>
+                        <div class="payment-icons">
+                            <img src="assets/checkout/visa.svg" alt="Visa" class="payment-icon">
+                            <img src="assets/checkout/mastercard.svg" alt="Mastercard" class="payment-icon">
+                            <img src="assets/checkout/discover.svg" alt="Discover" class="payment-icon">
+                            <img src="assets/checkout/paypal.svg" alt="PayPal" class="payment-icon">
+                            <img src="assets/checkout/klarna-1.svg" alt="Klarna" class="payment-icon">
+                            <img src="assets/checkout/amazon.svg" alt="Afterpay" class="payment-icon">
+                        </div>  
+                        <p class="payment-disclaimer">*Some payment methods may not be available for certain items or fulfillment methods.</p>  
+                    </div>
+                </div>
+
+                
+
+                <!-- Gift Card Section -->
+                <div class="gift-card-section">  
+                    <h4>Add a Rosa Gift Card</h4>  
+                    <p>The super-easy gift on everyone's list</p>  
+                    <button class="gift-card-button">$50 Add</button>  
+                </div>  
+            </aside>
+        </div>  
+    </section>  
+
+    <script src="script.js"></script>
+    <script>  
+        // Check local storage on page load to set active state  
+        document.addEventListener('DOMContentLoaded', () => {  
+            // Check if the activeButton exists in local storage  
+            const activeButtonId = localStorage.getItem('activeButton');  
+            if (activeButtonId) {  
+                const activeButton = document.getElementById(activeButtonId);  
+                if (activeButton) {  
+                    activeButton.classList.add('active'); // Add 'active' class to the button  
+                }  
+            }  
+
+            // Clear the localStorage after setting the state  
+            localStorage.removeItem('activeButton');  
+        });  
+    </script>
+</body>  
+</html>

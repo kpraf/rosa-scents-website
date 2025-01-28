@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosa Scents</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo/pink-rosascents-favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <header id="navigation">
+        <div class="container">
+            <!-- Nav Logo -->
+            <a href="homepage.html" class="logo" aria-label="back to home">
+                <img src="assets/logo/b-rosascent-logo.svg" alt="logo" width="300" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!-- Navigation List -->
+            <nav class="nav" role="navigation">
+                <!-- Mobile Nav Toggle -->
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <span class="line line1" aria-hidden="true"></span>
+                        <span class="line line2" aria-hidden="true"></span>
+                        <span class="line line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- Wrapper for Navigation -->
+                <div class="ul-wrapper">
+                    <ul id="expanded" class="ul" aria-expanded="false">
+                        <li class="li">
+                            <a href="homepage.html" class="li-link active">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="shop.html" class="li-link">Shop</a>
+                        </li>
+                        <li class="li cs-dropdown" tabindex="0">
+                            <span class="li-link">
+                                Categories
+                                <img class="drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" deHoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="drop-ul">
+                                <li class="drop-li"><a href="" class="li-link drop-link">New Arrivals</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Best Sellers</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Women's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Men's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Unisex Perfume</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="about.html" class="li-link">About Us</a></li>
+                        <li class="li"><a href="contact.html" class="li-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Icons Section -->
+            <div class="icons-container">
+                <a href="" class="icon-link" id="search-btn"><i class="fal fa-search"></i></a>
+                <a href="login.html" class="icon-link"><i class="fal fa-user"></i></a>
+                <a href="checkout.html" class="icon-link" id="shop-btn">
+                    <i class="fal fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SEARCH CONTAINER -->
+    <div id="search-container" class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search for products...">
+            <button id="close-search" class="close-search">
+                <i class="far fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- HERO SECTION -->
+    <section id="hero">
+        <div class="container">
+            <div class="content">
+                <span class="topper">
+                    Unleash Your Essence with Rosa Scents
+                </span>
+                <h1 class="title">Elevate Your Style with Our Exquisite Fragrance Collections</h1>
+                <a href="shop.html" class="button-solid">Shop Our Scents</a>
+            </div>
+            <!--Key Features-->
+            <div class="key-features">
+                <!-- Same Day Free Shipping -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <i class="fal fa-truck"></i>
+                        <h3>Same Day Free Shipping</h3>
+                    </div>
+                    <p class="feature-description">Orders ship the same day they're placed, ensuring fast and reliable delivery at no extra cost.</p>
+                </div>
+
+                <!-- 100% Authentic Fragrances -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <i class="fal fa-badge-check"></i>
+                        <h3>100% Authentic Fragrances</h3>
+                    </div>
+                    <p class="feature-description">We offer only genuine, high-quality perfumes directly from trusted brands, so you can shop with confidence.</p>
+                </div>
+
+                <!-- Safe & Secure Checkout -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <i class="fal fa-shield-check"></i>
+                        <h3>Safe & Secure Checkout</h3>
+                    </div>
+                    <p class="feature-description">Your privacy and security are our top priority. We offer a 100% safe and secure checkout experience.</p>
+                </div>
+
+                <!-- Customer Satisfaction -->
+                <div class="feature-item">
+                    <div class="feature-header">
+                        <i class="fal fa-heart"></i>
+                        <h3>Satisfaction Guaranteed</h3>
+                    </div>
+                    <p class="feature-description">Our customers are our priority. If you're not satisfied, we offer easy returns to ensure you're happy with your purchase.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Background Image, there's a background image in the CSS for the parallax effect you'll need to change as well if you swap out our images -->
+        <picture class="background">
+            <img decoding="async" src="assets/hero/cover2.png" alt="meeting" width="2250" height="1500" aria-hidden="true">
+        </picture>
+    </section>
+
+    <!-- NEW ARRIVAL FEATURE PRODUCT -->
+    <section id="promotion-1">
+        <div class="image-container">
+            <img src="assets/promotions/image.crop.png" alt="Luxury perfume bottles displayed elegantly" />
+        </div>
+        
+        <div class="content-container">
+            <p class="topper">FRESH SCENTS FOR YOU</p>
+            <h1 class="promo-title">Discover Our New Arrivals</h1>
+            <p class="description">Be the first to experience our latest fragrances. Each new scent is thoughtfully crafted with unique notes, perfect for adding a touch of elegance to any occasion.</p>
+            <a href="#" class="button-solid">Shop New Arrivals</a>
+        </div>
+    </section>
+
+    <!-- PRODUCTS LISTING -->
+    <!-- To add a 4th or 5th collection or more, copy and paste the cs-button and change it's data-filter to the next number, in this case it's 4. Do the same to the product-listing and its data-category number. And that's it! -->
+    <section id="product-list-section">
+        <div class="container">
+            <div class="content">
+                <span class="topper">Featured Products</span>
+                <h2 class="title h2">Discover Our Most-Loved Fragrances</h2>
+            </div>
+            
+            <div class="product-listing">
+                <div class="item">
+                    <a href="no5-chanel.html" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" 
+                                        decoding="async"
+                                        src="assets/products/chanel.png"
+                                        alt="Chanel N°5 Eau de Parfum"
+                                        width="300"
+                                        height="300">
+                            </picture>
+                        </div>
+                        <div class="item-info">
+                            <span class="item-brand">Chanel</span>
+                            <h3 class="item-name">N°5</h3>
+                            <div class="cs-flex-row">
+                                <div class="cs-price-rating-group">
+                                    <span class="item-price">$130.00</span>
+                                    <div class="cs-rating">
+                                        <div class="cs-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </div>
+                                        <span class="cs-review-count">(22)</span>
+                                    </div>
+                                </div>
+                                <button class="cs-add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item Two -->
+                <div class="item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" 
+                                        decoding="async"
+                                        src="assets/products/sauvage.png"
+                                        alt="Chanel N°5 Eau de Parfum"
+                                        width="300"
+                                        height="300">
+                            </picture>
+                            <span class="cs-discount">-20%</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="item-brand">Dior</span>
+                            <h3 class="item-name">Sauvage</h3>
+                            <div class="cs-flex-row">
+                                <div class="cs-price-rating-group">
+                                    <span class="item-price">$95.00</span>
+                                    <span class="cs-was-item-price">$118.00</span>
+                                    <div class="cs-rating">
+                                        <div class="cs-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                        <span class="cs-review-count">(100)</span>
+                                    </div>
+                                </div>
+                                <button class="cs-add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item Three -->
+                <div class="item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" 
+                                        decoding="async"
+                                        src="assets/products/bloom.png"
+                                        alt="Gucci Bloom Perfume"
+                                        width="300"
+                                        height="300"
+                                        title="">
+                            </picture>
+                            <span class="cs-discount">-20%</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="item-brand">Gucci</span>
+                            <h3 class="item-name">Bloom</h3>
+                            <div class="cs-flex-row">
+                                <div class="cs-price-rating-group">
+                                    <span class="item-price">$120.00</span>
+                                    <span class="cs-was-item-price">$150.00</span>
+                                    <div class="cs-rating">
+                                        <div class="cs-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fal fa-star"></i>
+                                        </div>
+                                        <span class="cs-review-count">(98)</span>
+                                    </div>
+                                </div>
+                                <button class="cs-add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item Four -->
+                <div class="item">
+                    <a href="" class="cs-link">
+                        <div class="cs-picture-group">
+                            <picture class="cs-picture">
+                                <img loading="lazy" 
+                                        decoding="async"
+                                        src="assets/products/orchid.png"
+                                        alt="Chanel N°5 Eau de Parfum"
+                                        width="300"
+                                        height="300">
+                            </picture>
+                            <span class="cs-discount">-10%</span>
+                        </div>
+                        <div class="item-info">
+                            <span class="item-brand">Tom Ford</span>
+                            <h3 class="item-name">Black Orchid</h3>
+                            <div class="cs-flex-row">
+                                <div class="cs-price-rating-group">
+                                    <span class="item-price">$180.00</span>
+                                    <span class="cs-was-item-price">$200.00</span>
+                                    <div class="cs-rating">
+                                        <div class="cs-stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <span class="cs-review-count">(120)</span>
+                                    </div>
+                                </div>
+                                <button class="cs-add-to-cart">
+                                    <i class="fal fa-shopping-cart"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Item Five -->
+            <div class="item">
+                <a href="" class="cs-link">
+                    <div class="cs-picture-group">
+                        <picture class="cs-picture">
+                            <img loading="lazy" 
+                                    decoding="async"
+                                    src="assets/products/libre.png"
+                                    alt="Chanel N°5 Eau de Parfum"
+                                    width="300"
+                                    height="300">
+                        </picture>
+                        <span class="cs-discount">-15%</span>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-brand">Yves Saint Laurent</span>
+                        <h3 class="item-name">Libre</h3>
+                        <div class="cs-flex-row">
+                            <div class="cs-price-rating-group">
+                                <span class="item-price">$140.00</span>
+                                <span class="cs-was-item-price">$164.75</span>
+                                <div class="cs-rating">
+                                    <div class="cs-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="cs-review-count">(67)</span>
+                                </div>
+                            </div>
+                            <button class="cs-add-to-cart">
+                                <i class="fal fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item Six -->
+            <div class="item">
+                <a href="" class="cs-link">
+                    <div class="cs-picture-group">
+                        <picture class="cs-picture">
+                            <img loading="lazy" 
+                                    decoding="async"
+                                    src="assets/products/creed.png"
+                                    alt="Chanel N°5 Eau de Parfum"
+                                    width="300"
+                                    height="300">
+                        </picture>
+                        <span class="cs-discount">-10%</span>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-brand">Creed</span>
+                        <h3 class="item-name">Aventus</h3>
+                        <div class="cs-flex-row">
+                            <div class="cs-price-rating-group">
+                                <span class="item-price">$330.00</span>
+                                <span class="cs-was-item-price">$366.25</span>
+                                <div class="cs-rating">
+                                    <div class="cs-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="cs-review-count">(100)</span>
+                                </div>
+                            </div>
+                            <button class="cs-add-to-cart">
+                                <i class="fal fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item Seven -->
+            <div class="item">
+                <a href="" class="cs-link">
+                    <div class="cs-picture-group">
+                        <picture class="cs-picture">
+                            <img loading="lazy" 
+                                    decoding="async"
+                                    src="assets/products/english.png"
+                                    alt="Chanel N°5 Eau de Parfum"
+                                    width="300"
+                                    height="300">
+                        </picture>
+                        <span class="cs-discount">-20%</span>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-brand">Jo Malone</span>
+                        <h3 class="item-name">English Pear & Freesia</h3>
+                        <div class="cs-flex-row">
+                            <div class="cs-price-rating-group">
+                                <span class="item-price">$108.00</span>
+                                <span class="cs-was-item-price">$120.00</span>
+                                <div class="cs-rating">
+                                    <div class="cs-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="cs-review-count">(97)</span>
+                                </div>
+                            </div>
+                            <button class="cs-add-to-cart">
+                                <i class="fal fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Item Eight -->
+            <div class="item">
+                <a href="" class="cs-link">
+                    <div class="cs-picture-group">
+                        <picture class="cs-picture">
+                            <img loading="lazy" 
+                                    decoding="async"
+                                    src="assets/products/prada.png"
+                                    alt="Chanel N°5 Eau de Parfum"
+                                    width="300"
+                                    height="300">
+                        </picture>
+                    </div>
+                    <div class="item-info">
+                        <span class="item-brand">Prada</span>
+                        <h3 class="item-name">L'Homme Prada</h3>
+                        <div class="cs-flex-row">
+                            <div class="cs-price-rating-group">
+                                <span class="item-price">$144.00</span>
+                                <div class="cs-rating">
+                                    <div class="cs-stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <span class="cs-review-count">(96)</span>
+                                </div>
+                            </div>
+                            <button class="cs-add-to-cart">
+                                <i class="fal fa-shopping-cart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROMOTIONS 2 -->
+    <section id="promotions-2">
+        <div class="container">
+            <ul class="card-group">
+                <li class="item">
+                    <picture class="background">
+                        <img loading="lazy" decoding="async" src="assets/promotions/promo2.jpg" alt="room" width="630" height="354">
+                    </picture>
+                    <div class="promo-caption">
+                        <span class="tag">Luxurious Scents</span>
+                        <h2 class="h2">Extra 30% Off</h2>
+                        <a href="" class="button-solid">Shop Now</a>
+                    </div>
+                </li>
+                <li class="item">
+                    <picture class="background">
+                        <img loading="lazy" decoding="async" src="assets/promotions/promo5.jpg" alt="room" width="630" height="354">
+                    </picture>
+                    <div class="promo-caption">
+                        <span class="tag">Odorous Allure</span>
+                        <h2 class="h2">Buy 2, Get 1 Free</h2>
+                        <a href="" class="button-solid">Shop Now</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews">
+        <div class="container">
+            <div class="content">
+                <span class="topper">Customer Reviews</span>
+                <h2 class="title h2">What Our Fragrance Lovers Say</h2>
+            </div>
+            <ul class="card-group">
+                <li class="review-item">
+                    <div class="flex-group">
+                        <picture class="review-picture profile" aria-hidden="true">
+                            <img class="review-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                        </picture>
+                        <span class="review-name">
+                            Sophia Carter
+                            <span class="review-position">Los Angeles, LA</span>
+                        </span>
+                    </div>
+                    <p class="review-paragraph">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo. 
+                    </p>
+                </li>
+                <li class="review-item">
+                    <div class="flex-group">
+                        <picture class="review-picture profile" aria-hidden="true">
+                            <img class="review-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                        </picture>
+                        <span class="review-name">
+                            Mason James
+                            <span class="review-position">New York, NY</span>
+                        </span>
+                    </div>
+                    <p class="review-paragraph">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                    </p>
+                </li>
+                <li class="review-item">
+                    <div class="flex-group">
+                        <picture class="review-picture profile" aria-hidden="true">
+                            <img class="review-profile" src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile2.jpg" decoding="async" alt="profile" width="50" height="50">
+                        </picture>
+                        <span class="review-name">
+                            George Thomas
+                            <span class="review-position">Miami, FL</span>
+                        </span>
+                    </div>
+                    <p class="review-paragraph">
+                        Curabitur vitae nunc sed velit dignissim sodales ut. Maecenas ultricies mi eget mauris pharetra et. Et ligula ullamcorper malesuada proin pellentesque diam volutpat commodo
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER WITH NEWSLETTER -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Store Information -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Store Information</h3>
+                <div class="footer-content">
+                    <p class="footer-address">
+                        <i class="fas fa-map-marker-alt" style="font-size: 19px;"></i>
+                        <a href="">7515 Place de la Paix, <br>Paris, 75000 France</a>
+                    </p>
+                    <p class="footer-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:(+001) 123-456-7890">(+001) 123-456-7890</a>
+                    </p>
+                    <p class="footer-email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:perfumul@templatetrip.com">rosascents@createspace.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+
+            <!-- My Account -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">My Account</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Sign Up For Newsletter</h3>
+                <form class="footer-newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">
+                        <i class="far fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Links and Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links-bottom">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund and Returns Policy</a>
+                <a href="#">Shop</a>
+            </div>
+            <p class="footer-copyright">© Copyright 2025 - Rosa Scents</p>
+        </div>
+    </footer>
+                                
+
+    <script src="script.js"></script>
+</body>
+</html>

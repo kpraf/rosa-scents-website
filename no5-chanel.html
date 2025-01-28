@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N°5 Chanel - Rosa Scents</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/logo/pink-rosascents-favicon.svg" sizes="any" type="image/svg+xml">
+</head>
+<body>
+    <!-- Navigation -->
+    <header id="navigation">
+        <div class="container">
+            <!-- Nav Logo -->
+            <a href="homepage.html" class="logo" aria-label="back to home">
+                <img src="assets/logo/b-rosascent-logo.svg" alt="logo" width="300" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!-- Navigation List -->
+            <nav class="nav" role="navigation">
+                <!-- Mobile Nav Toggle -->
+                <button class="toggle" aria-label="mobile menu toggle">
+                    <div class="box" aria-hidden="true">
+                        <span class="line line1" aria-hidden="true"></span>
+                        <span class="line line2" aria-hidden="true"></span>
+                        <span class="line line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- Wrapper for Navigation -->
+                <div class="ul-wrapper">
+                    <ul id="expanded" class="ul" aria-expanded="false">
+                        <li class="li">
+                            <a href="homepage.html" class="li-link ">Home</a>
+                        </li>
+                        <li class="li">
+                            <a href="shop.html" class="li-link active">Shop</a>
+                        </li>
+                        <li class="li cs-dropdown" tabindex="0">
+                            <span class="li-link">
+                                Categories
+                                <img class="drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fdown.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="drop-ul">
+                                <li class="drop-li"><a href="" class="li-link drop-link">New Arrivals</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Best Sellers</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Women's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Men's Perfume</a></li>
+                                <li class="drop-li"><a href="" class="li-link drop-link">Unisex Perfume</a></li>
+                            </ul>
+                        </li>
+                        <li class="li"><a href="about.html" class="li-link">About Us</a></li>
+                        <li class="li"><a href="contact.html" class="li-link">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- Icons Section -->
+            <div class="icons-container">
+                <a href="" class="icon-link" id="search-btn"><i class="fal fa-search"></i></a>
+                <a href="login.html" class="icon-link"><i class="fal fa-user"></i></a>
+                <a href="" class="icon-link" id="shop-btn"><i class="fal fa-shopping-cart"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Container -->
+    <div id="search-container" class="search-container">
+        <div class="search-box">
+            <input type="text" placeholder="Search for products...">
+            <button id="close-search" class="close-search">
+                <i class="far fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+
+    <section id="product-section">
+
+        <nav class="product-breadcrumb">
+            <ul class="product-breadcrumb-list">
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><span>N°5 Chanel</span></li>
+            </ul>
+        </nav>
+
+        <div class="product-info-section">
+
+            <!-- Product Images -->
+            <div class="product-images-container">
+                <div class="main-image">
+                    <img src="assets/products/chanel.png" alt="N°5 Chanel Perfume">
+                </div>
+                <div class="thumbnail-list">
+                    <div class="thumbnail">
+                        <img src="assets/products/thumbnails/chanel/chanel1.png">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product Info -->
+            <div class="product-info-container">
+
+                <!-- Breadcrumb -->
+
+                <!-- Product Title, Brand, Price, Rating, and Reviews -->
+                <span class="item-brand">Chanel</span>
+                <h1 class="product-name">N°5 L'Eau</h1>
+                <span class="product-price">$138.00</span>
+                
+                <div class="product-rating">
+                    <div class="product-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <span class="review-count">(22 reviews)</span>
+                </div>
+
+                <div class="product-options">
+                    <div class="option-group">
+                        <label class="option-label">Concentration</label>
+                        <select class="select">
+                            <option>Eau de Toilette (EDT)</option>
+                            <option>Eau de Parfum (EDP)</option>
+                            <option>Parfum (Extrait de Parfum)</option>
+                        </select>
+                    </div>
+                    <div class="option-group">
+                        <label class="option-label">Size</label>
+                        <select class="select">
+                            <option>50ml</option>
+                            <option>100ml</option>
+                            <option>200ml</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="quantity-wrapper">
+                    <input type="number" class="quantity" value="1" min="1">
+                    <button class="product-add-to-cart">
+                        <i class="fal fa-shopping-cart"></i> Add to Cart
+                    </button>
+                </div>
+
+                <a href="#" class="add-to-wishlist">
+                    <i class="far fa-heart"></i> Add to Wishlist
+                </a>
+
+                <div class="social-share">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="product-description-page">
+        <div class="product-description-container">
+            <div class="product-tabs">
+                <ul class="product-tab-list">
+                    <li><button class="product-tab-button active" data-tab="description">Description</button></li>
+                    <li><button class="product-tab-button" data-tab="scent-notes">Scent Notes</button></li>
+                    <li><button class="product-tab-button" data-tab="review-users">Reviews (22)</button></li>
+                    <li><button class="product-tab-button" data-tab="shipping">Shipping & Returns</button></li>
+                </ul>
+    
+                <div class="product-tab-content">
+                    <!-- Description Tab -->
+                    <div class="product-tab-panel active" id="description">
+                        <h3>About N°5</h3>
+                        <p>The now and forever fragrance. The ultimate in femininity. An elegant, luxurious spray closest in strength and character to the parfum form. The sleek, portable signature bottle is perfect for the dressing table or travel.</p>
+                        <p>A rich, robust floral-aldehydic fragrance. An extravagant, full-bodied bouquet of abstract flowers with aldehydic sparkle. Powerful, yet restrained. Complex, yet measured. N°5 has become an undisputed icon of modern perfumery.</p>
+                    </div>
+    
+                    <!-- Scent Notes Tab -->
+                    <div class="product-tab-panel" id="scent-notes">
+                        <div class="product-scent-notes">
+                            <div class="product-scent-category">
+                                <h4>Top Notes</h4>
+                                <ul class="product-scent-list">
+                                    <li>Aldehydes</li>
+                                    <li>Bergamot</li>
+                                    <li>Neroli</li>
+                                    <li>Ylang-Ylang</li>
+                                </ul>
+                            </div>
+                            <div class="product-scent-category">
+                                <h4>Heart Notes</h4>
+                                <ul class="product-scent-list">
+                                    <li>Rose</li>
+                                    <li>Jasmine</li>
+                                    <li>Iris</li>
+                                    <li>Lily of the Valley</li>
+                                </ul>
+                            </div>
+                            <div class="product-scent-category">
+                                <h4>Base Notes</h4>
+                                <ul class="product-scent-list">
+                                    <li>Vetiver</li>
+                                    <li>Sandalwood</li>
+                                    <li>Vanilla</li>
+                                    <li>Amber</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <!-- Reviews Tab -->
+                    <div class="product-tab-panel" id="review-users">
+                        <div class="product-review">
+                            <div class="product-review-header">
+                                <span class="product-reviewer-name">Sarah Johnson</span>
+                                <span class="product-review-date">January 5, 2025</span>
+                            </div>
+                            <div class="product-stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"A timeless classic that never fails to make me feel elegant. The scent is sophisticated and long-lasting."</p>
+                        </div>
+                        <!-- More reviews can be added here -->
+                    </div>
+    
+                    <!-- Shipping Tab -->
+                    <div class="product-tab-panel" id="shipping">
+                        <div class="info-container">
+                            <h3>Shipping Information</h3>
+                            <p>Free standard shipping on all orders over $100. Orders typically arrive within 3-5 business days.</p>
+                        </div>
+                        <div class="info-container">
+                            <h3>Returns Policy</h3>
+                            <p>We accept returns within 30 days of purchase. Items must be unopened and in their original packaging.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!-- Footer with Newsletter -->
+    <footer class="footer-section">
+        <div class="footer-container">
+            <!-- Store Information -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Store Information</h3>
+                <div class="footer-content">
+                    <p class="footer-address">
+                        <i class="fas fa-map-marker-alt" style="font-size: 19px;"></i>
+                        <a href="">7515 Place de la Paix, <br>Paris, 75000 France</a>
+                    </p>
+                    <p class="footer-phone">
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="tel:(+001) 123-456-7890">(+001) 123-456-7890</a>
+                    </p>
+                    <p class="footer-email">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:perfumul@templatetrip.com">rosascents@createspace.com</a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Collections</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">FAQ's</a></li>
+                </ul>
+            </div>
+
+            <!-- My Account -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">My Account</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Checkout</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="footer-container-box">
+                <h3 class="footer-title">Sign Up For Newsletter</h3>
+                <form class="footer-newsletter-form">
+                    <input type="email" placeholder="Your Email Address">
+                    <button type="submit">
+                        <i class="far fa-arrow-right"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Social Links and Copyright -->
+        <div class="footer-bottom">
+            <div class="footer-social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <div class="footer-links-bottom">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Refund and Returns Policy</a>
+                <a href="#">Shop</a>
+            </div>
+            <p class="footer-copyright">© Copyright 2025 - Rosa Scents</p>
+        </div>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
